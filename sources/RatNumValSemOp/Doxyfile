@@ -1,0 +1,14 @@
+# Doxyfile for RatNumberValSemOp
+# Author: Ulrich Eisenecker, March 20, 2025
+PROJECT_NAME           = RatNumberValSemOp
+OUTPUT_DIRECTORY       = doc
+INPUT                  = src/main.cpp src
+EXCLUDE                = src/catch_amalgamated.hpp\ 
+                         src/catch_amalgamated.cpp\ 
+                         src/full_test.cpp\
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES

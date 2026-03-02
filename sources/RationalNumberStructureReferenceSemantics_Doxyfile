@@ -1,0 +1,11 @@
+# RationalNumberStructureReferenceSemantics_Doxyfile
+# Author: Ulrich Eisenecker, March 15, 2025
+PROJECT_NAME           = RationalNumberStructureReferenceSemantics
+OUTPUT_DIRECTORY       = RationalNumberStructureReferenceSemantics_doc
+INPUT                  = RationalNumberStructureReferenceSemantics.cpp
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES

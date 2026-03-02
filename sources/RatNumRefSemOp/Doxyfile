@@ -1,0 +1,17 @@
+# Doxyfile for RatNumberRefSemOp
+# Author: Ulrich Eisenecker, December 17, 2025
+PROJECT_NAME           = RatNumberRefSemOp
+OUTPUT_DIRECTORY       = doc
+INPUT                  = src src/main.cpp
+EXCLUDE                = src/full_test.cpp\
+                         math_helper_test.cpp\
+                         src/rational_number_test.cpp\
+                         src/rational_number_operator_test.cpp\
+                         src/catch_amalgamated.hpp\
+                         src/catch_amalgamated.cpp
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES

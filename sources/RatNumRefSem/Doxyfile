@@ -1,0 +1,11 @@
+# Doxyfile for RatNumberRefSem
+# Author: Ulrich Eisenecker, March 15, 2025
+PROJECT_NAME           = RatNumberRefSem
+OUTPUT_DIRECTORY       = doc
+INPUT                  = src/main.cpp src
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES

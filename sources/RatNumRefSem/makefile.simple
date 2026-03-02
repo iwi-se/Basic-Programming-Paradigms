@@ -1,0 +1,29 @@
+# Makefile for RatNumRefSem, January 17, 2023, Author: Ulrich Eisenecker
+
+# Rule 1: Link executable
+obj/demo: obj/main.o obj/rational_number.o obj/math_helper.o
+	g++ -std=c++20 -o obj/demo obj/main.o obj/rational_number.o obj/math_helper.o
+
+# Rule 2: Compile main.cpp
+obj/main.o: src/main.cpp src/rational_number.hpp
+	g++ -std=c++20 -o obj/main.o -c src/main.cpp
+
+# Rule 3: Compile math_helper.cpp
+obj/math_helper.o: src/math_helper.cpp src/math_helper.hpp
+	g++ -std=c++20 -o obj/math_helper.o -c src/math_helper.cpp
+
+# Rule 4: Compile rational_number.cpp
+obj/rational_number.o: src/rational_number.cpp src/rational_number.hpp \
+	src/math_helper.hpp
+	g++ -std=c++20 -o obj/rational_number.o -c src/rational_number.cpp 
+
+# Rule 5: Delete all binaries and executable
+clean:
+	rm -f obj/*
+	rm -rf doc/*
+
+.PHONY: doc
+
+# Rule 6: Generate documentation
+doc:
+	doxygen

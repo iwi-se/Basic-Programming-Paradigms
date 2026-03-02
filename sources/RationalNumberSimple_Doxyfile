@@ -1,0 +1,11 @@
+# RationalNumberSimple_Doxyfile
+# Author: Ulrich Eisenecker, March 15, 2025
+PROJECT_NAME           = RationalNumberSimple
+OUTPUT_DIRECTORY       = RationalNumberSimple_doc
+INPUT                  = RationalNumberSimple.cpp
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES

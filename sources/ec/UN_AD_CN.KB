@@ -1,0 +1,56 @@
+goal is container
+
+legalanswers are yes no *
+
+answer is 
+"The STL container matching your needs is probably a(n) " 
+container
+
+question order.is.important
+is "Is order important?" 
+
+question duplicates.are.allowed
+is "Are duplicates allowed?"
+
+question map.key.to.value
+is "Do you want to map a key to a value?"
+
+question last.in.first.out
+is "Is the element added last the first to be taken out?"
+
+question first.in.first.out
+is "Is the element added first the first to be taken out?"
+
+if order.is.important is no
+and duplicates.are.allowed is no
+and map.key.to.value is no
+then container is unordered.set
+
+if order.is.important is no
+and duplicates.are.allowed is no
+and map.key.to.value is yes
+then container is unordered.map
+
+if order.is.important is no
+and duplicates.are.allowed is yes
+and map.key.to.value is no
+then container is unordered.multiset
+
+if order.is.important is no
+and duplicates.are.allowed is yes
+and map.key.to.value is yes
+then container is unordered.multimap
+
+if order.is.important is yes
+and last.in.first.out is no
+and first.in.first.out is no
+then container is priority.queue
+
+if order.is.important is yes
+and last.in.first.out is no
+and first.in.first.out is yes
+then container is queue
+
+if order.is.important is yes
+and last.in.first.out is yes
+then container is stack
