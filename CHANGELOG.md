@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1 — 2026-06-22 10:06:16 UTC
+
+### Book
+- Updated PDF
+
+### Modified
+- book/Basic Programming Paradigms in C++.pdf
+
 ## v2.0 — 2026-03-02 16:44:45 UTC
 
 ### Book
